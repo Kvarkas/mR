@@ -5,7 +5,7 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: { adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/mR' : ''
+			base: process.env.NODE_ENV === 'production' ? '' : process.env.BASE_PATH
 		},
 	 }
 };
